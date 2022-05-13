@@ -33,7 +33,7 @@ mvn install:install-file -Dfile=c:\Users\soumya.2136099\Downloads\AWS-DynamoDB-J
 The maven dependency successfully configured in the system and ready to use as a maven dependency.
 
 ### Add dependency configuration to project .pom file
-```java
+```XML
 <!— Infy AWS DynamoDB custom component maven dependency -->
 <dependency>
   <groupId>com.infosys.aws.dynamodb.blueprint</groupId>
