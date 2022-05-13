@@ -53,11 +53,13 @@ As part of aws cloud service operation role based or Access keys authentication 
 * ACCESS_KEY_ID
 * SECRET_ACCESS_KEY
 * AWS_REGION
+
 Access keys are long-term credentials for an IAM user, for best practice ues IAM profile or role
 
 ### Deploying / Publishing
 
 @return Create new client builder instance for authentication and authorization
+
 __AwsDynamoDbManager.getInstanceOfDynamoDbBlueprint__ //class with static method and @Bean
 ```shell
 	@Bean
