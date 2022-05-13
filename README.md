@@ -33,11 +33,11 @@ mvn install:install-file -Dfile=c:\Users\soumya.2136099\Downloads\AWS-DynamoDB-J
 The maven dependency successfully configured in the system and ready to use as a maven dependency.
 
 ### Add dependency configuration to project .pom file
-```shell
+```java
 <!— Infy AWS DynamoDB custom component maven dependency -->
 <dependency>
-  <groupId>org.infy.aws.dynamodb.component</groupId>
-  <artifactId>org-infy-aws-dynamodb-component</artifactId>
+  <groupId>com.infosys.aws.dynamodb.blueprint</groupId>
+  <artifactId>com-infosys-aws-dynamodb-blueprint</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
@@ -54,8 +54,7 @@ and how to implement these methods to project followed by:
 
 ## Environment Variables Setting
 
-As part of aws cloud service operation Access keys authentication/authorization required to configure in cloud config or
-or any key store or secrate mnager or resources/application.properties
+As part of aws cloud service operation Access keys authentication/authorization required to configure in cloud config or any key store or secrate manager or resources/application.properties
 * ACCESS_KEY_ID
 * SECRET_ACCESS_KEY
 * AWS_REGION
@@ -65,6 +64,7 @@ Access keys are long-term credentials for an IAM user, for best practice ues IAM
 ## Implementation
 
 Package and class with static method create @return client builder instance with applied permission for AWS DynamoDb operations.
+
 **Package** : com.infosys.aws.dynamodb.blueprint
 
 **Class** : AwsDynamoDbManager.getInstanceOfDynamoDbBlueprint(...)
@@ -89,7 +89,7 @@ Calling methods as per requirement
 * readDynamoDBItem(...)
 
 For example:
-```shell
+```Java
 @Autowired
 private AwsDynamoDbManager customAmazonDynamoClient;
 
