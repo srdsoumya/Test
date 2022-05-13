@@ -70,7 +70,7 @@ Package and class with static method create @return client builder instance with
 **Class** : AwsDynamoDbManager.getInstanceOfDynamoDbBlueprint(...)
 
 For example:
-```shell
+```java
 @Bean
 public AwsDynamoDbManager customAmazonDynamoClient() {
 	if(accessKey != null && !accessKey.trim().isEmpty() && secretKey != null && !secretKey.trim().isEmpty()) {
