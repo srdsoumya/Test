@@ -123,4 +123,4 @@ links to humans using your project. You can include links like:
 ## Licensing
 Powered by Infosys Team
 
-"The code in this project is licensed under Infosys license."
+"The code in this project is licensed under Infosys."
