@@ -49,19 +49,21 @@ and how to implement these methods to project:
 
 ### Environment Variables Setting
 
-As part of aws cloud service operation role based or Access keys authentication authorization required.
+As part of aws cloud service operation Access keys authentication/authorization required to configure in cloud config or
+or any key store or secrate mnager or resources/application.properties
 * ACCESS_KEY_ID
 * SECRET_ACCESS_KEY
 * AWS_REGION
 
 Access keys are long-term credentials for an IAM user, for best practice ues IAM profile or role.
 
-### Deploying / Publishing
+### Implement
 
 Class with static method create @return client builder instance with applied permission for AWS DynamoDb operations.
 
 __AwsDynamoDbManager.getInstanceOfDynamoDbBlueprint__ 
 
+For example:
 ```shell
 @Bean
 public AwsDynamoDbManager customAmazonDynamoClient() {
