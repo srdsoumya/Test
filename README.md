@@ -52,12 +52,11 @@ and how to implement these methods to project:
 If your project needs some additional steps for the developer to build the
 project after some code changes, state them here:
 
-```shell
 What's all the bells and whistles this project can perform?
 * What's the main functionality
 * You can also do another thing
 * If you get really randy, you can even do thisl
-```
+
 
 Here again you should state what actually happens when the code above gets
 executed.
