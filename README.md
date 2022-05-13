@@ -65,8 +65,9 @@ Access keys are long-term credentials for an IAM user, for best practice ues IAM
 ## Implementation
 
 Package and class with static method create @return client builder instance with applied permission for AWS DynamoDb operations.
-com.infosys.aws.dynamodb.blueprint
-AwsDynamoDbManager.getInstanceOfDynamoDbBlueprint 
+**com.infosys.aws.dynamodb.blueprint** 
+
+__AwsDynamoDbManager.getInstanceOfDynamoDbBlueprint__ 
 
 For example:
 ```shell
