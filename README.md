@@ -1,7 +1,7 @@
 ![Logo of the project](https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg)
 
 # AWS-DynamoDB-Java-Blueprint
-> Only Java without knowing AWS cloud.
+> Less code more power without knowing AWS cloud.
 
 This is a reusable AWS Java tech component can be used as maven dependency for other projects.
 It integrated with aws sdk and provide commonly and frequently used functions with additional scope,
@@ -9,7 +9,7 @@ without writing much code to communicate with Amazon DynamoDB services.
 
 ## Getting started
 
-Two way to configure maven depedency 
+Two way to configure maven dependency 
 
 ```shell
 Clone repository to IDE workspace
@@ -45,9 +45,14 @@ The maven dependency successfully configured in the system and ready to use as a
 ## Developing
 
 To implement AWS-DynamoDB-Java-Blueprint API, must understand functional scope or features 
-and how to implement these methods to project:
+and how to implement these methods to project followed by:
 
-### Environment Variables Setting
+* Environment Variables Setting
+* Implementation
+* Functional and method scope
+* Building and Packaging
+
+## Environment Variables Setting
 
 As part of aws cloud service operation Access keys authentication/authorization required to configure in cloud config or
 or any key store or secrate mnager or resources/application.properties
@@ -57,11 +62,10 @@ or any key store or secrate mnager or resources/application.properties
 
 Access keys are long-term credentials for an IAM user, for best practice ues IAM profile or role.
 
-### Implement
+## Implementation
 
 Package and class with static method create @return client builder instance with applied permission for AWS DynamoDb operations.
 __com.infosys.aws.dynamodb.blueprint__ 
-
 __AwsDynamoDbManager.getInstanceOfDynamoDbBlueprint__ 
 
 For example:
@@ -76,8 +80,6 @@ public AwsDynamoDbManager customAmazonDynamoClient() {
 	}
 }
 ```
-
-And again you'd need to tell what the previous code actually does.
 
 ## Functional and method scope
 
@@ -94,10 +96,9 @@ boolean isInserted = customAwsDynamoDBClient.writeDynamoDBItem(<TABLE_NAME>, <Co
 String result = customAwsDynamoDBClient.readDynamoDBItem(<TABLE_NAME>, <primary key name>, <primary key value>, <column name>);
 ```
 
-## Configuration
+## Building and Packaging
 
-Here you should write what are all of the configurations a user can enter when
-using the project.
+To create deployable jar or war for your spring boot project including its dependency added automatically.
 
 #### Argument 1
 Type: `String`  
