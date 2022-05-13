@@ -49,19 +49,26 @@ and how to implement these methods to project:
 
 ### Environment Variables Setting
 
-If your project needs some additional steps for the developer to build the
-project after some code changes, state them here:
-
-What's all the bells and whistles this project can perform?
-* What's the main functionality
-* You can also do another thing
-* If you get really randy, you can even do thisl
-
-
-Here again you should state what actually happens when the code above gets
-executed.
+As part of aws cloud service operation role based or Access keys authentication authorization required
+* ACCESS_KEY_ID
+* SECRET_ACCESS_KEY
+* AWS_REGION
+Note : Access keys are long-term credentials for an IAM user, for best practice ues IAM profile or role
 
 ### Deploying / Publishing
 
-In case there's some step you have to take that publishes this project to a
-server, this is the right time to state it.
+@return Create new client builder instance for authentication and authorization
+* AwsDynamoDbManager.getInstanceOfDynamoDbBlueprint //class with static method and @Bean
+```shell
+	@Bean
+	public AwsDynamoDbManager customAmazonDynamoClient() {
+		if(accessKey != null && !accessKey.trim().isEmpty() && secretKey != null && !secretKey.trim().isEmpty()) {
+			return AwsDynamoDbManager.getInstanceOfDynamoDbBlueprint(region,accessKey,secretKey); //For Access Keys
+		}
+		else {
+			return AwsDynamoDbManager.getInstanceOfDynamoDbBlueprint(); //For IAM profile role
+		}
+	}
+```
+
+And again you'd need to tell what the previous code actually does.
