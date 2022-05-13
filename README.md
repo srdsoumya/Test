@@ -9,18 +9,14 @@ without writing much code to communicate with Amazon DynamoDB services.
 
 ## Getting started
 
-Two way to add maven depedency 
+Two way to configure maven depedency 
 
 ```shell
 Clone repository to IDE workspace
 git clone https://github.com/your/AWS-DynamoDB-Java-Blueprint.git
 cd AWS-DynamoDB-Java-Blueprint/
 mvn clean install
-
-or
-
-Open the AWS-DynamoDB-Java-Blueprint folder in any maven supported java IDE as a maven project
-mvn clean install
+or open the AWS-DynamoDB-Java-Blueprint folder in any maven supported java IDE as a maven project
 ```
 
 ```shell
@@ -48,5 +44,25 @@ The maven dependency successfully configured in the system and ready to use as a
 
 ## Developing
 
-Here's a brief intro about what a developer must do in order to start developing
-the project further:
+To implement AWS-DynamoDB-Java-Blueprint API, must understand functional scope or features 
+and how to implement these methods to project:
+
+### Environment Variables Setting
+
+If your project needs some additional steps for the developer to build the
+project after some code changes, state them here:
+
+```shell
+What's all the bells and whistles this project can perform?
+* What's the main functionality
+* You can also do another thing
+* If you get really randy, you can even do thisl
+```
+
+Here again you should state what actually happens when the code above gets
+executed.
+
+### Deploying / Publishing
+
+In case there's some step you have to take that publishes this project to a
+server, this is the right time to state it.
