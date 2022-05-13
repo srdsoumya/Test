@@ -13,7 +13,7 @@ Two way to configure maven dependency
 
 ```shell
 Clone repository to IDE workspace
-git clone https://github.com/your/AWS-DynamoDB-Java-Blueprint.git
+git clone https://infygithub.ad.infosys.com/soumya-2136099/AWS-DynamoDB-Java-Blueprint.git
 cd AWS-DynamoDB-Java-Blueprint/
 mvn clean install
 or open the AWS-DynamoDB-Java-Blueprint folder in any maven supported java IDE as a maven project
@@ -110,15 +110,14 @@ Powered by Infosys Team
 
 ## Links
 
-Even though this information can be found inside the project on machine-readable
-format like in a .json file, it's good to include a summary of most useful
-links to humans using your project. You can include links like:
+Important useful links
 
-- Repository: https://your.github.com/AWS-DynamoDB-Java-Blueprint/
-- Issue tracker: https://your.github.com/AWS-DynamoDB-Java-Blueprint/issues
+- Repository: https://infygithub.ad.infosys.com/soumya-2136099/AWS-DynamoDB-Java-Blueprint/
+- API documentation : https://infygithub.ad.infosys.com/soumya-2136099/AWS-DynamoDB-Java-Blueprint/document
+- Issue tracker: https://infygithub.ad.infosys.com/soumya-2136099/AWS-DynamoDB-Java-Blueprint/issues
 - Related projects:
-  - Your other project: https://github.com/your/AWS-S3-Java-Blueprint/
-  - Someone else's project: https://github.com/someones/AWS-SNS-Java-Blueprint/
+  - AWS-S3-Java-Blueprint: https://infygithub.ad.infosys.com/soumya-2136099/AWS-S3-Java-Blueprint/
+  - AWS-SNS-Java-Blueprint: https://infygithub.ad.infosys.com/soumya-2136099/AWS-SNS-Java-Blueprint/
 
 
 ## Licensing
