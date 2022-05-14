@@ -4,7 +4,7 @@
 > Less code more power without knowing AWS cloud.
 
 This is a reusable AWS Java tech component can be used as maven dependency for other projects.
-It integrated with aws SNS sdk and provide commonly and frequently used functions with additional scope,
+It integrated with SNS sdk and provide commonly and frequently used functions with additional scope,
 without writing much code to communicate with Amazon Simple Notification Service.
 
 ## Getting started
