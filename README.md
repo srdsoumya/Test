@@ -30,7 +30,7 @@ mvn install:install-file -Dfile=c:\Users\soumya.2136099\Downloads\AWS-SNS-Java-B
 -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar
 ```
 
-The maven dependency successfully configured in the system and ready to use as a maven dependency.
+The custom blueprint maven dependency successfully configured in the system and ready to use as a maven dependency.
 
 ### Add dependency configuration to project .pom file
 ```xml
