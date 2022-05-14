@@ -127,7 +127,7 @@ Important useful links
 - Repository: https://infygithub.ad.infosys.com/soumya-2136099/AWS-SNS-Java-Blueprint/
 - API documentation : https://infygithub.ad.infosys.com/soumya-2136099/AWS-SNS-Java-Blueprint/document
 - Issue tracker: https://infygithub.ad.infosys.com/soumya-2136099/AWS-SNS-Java-Blueprint/issues
-- Related projects:
+- Related components:
   - AWS-S3-Java-Blueprint: https://infygithub.ad.infosys.com/soumya-2136099/AWS-S3-Java-Blueprint/
   - AWS-DynamoDB-Java-Blueprint: https://infygithub.ad.infosys.com/soumya-2136099/AWS-DynamoDB-Java-Blueprint/
 
