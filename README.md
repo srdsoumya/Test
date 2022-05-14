@@ -66,7 +66,7 @@ No configuration required for this blueprint component because its parameterized
 
 Package and class with static method create @return client builder instance with applied permission for AWS S3 operations.
 
-**Package** : com.infosys.aws.dynamodb.blueprint
+**Package** : com.infosys.aws.s3.blueprint
 
 **Class** : AwsS3Manager.getInstanceOfS3Blueprint(...)
 
