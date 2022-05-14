@@ -111,7 +111,7 @@ boolean isPublish = customAmazonSnsClient.publishBatchMessageToSnsTopic(<LIST_ME
 
 ## Building and Packaging
 
-To create deployable jar or war for your spring boot project including its dependency added automatically.
+To create deployable jar or war for your spring boot project including its dependency and custom blueprint dependency.
 ```shell
 mvn clean install
 ```
