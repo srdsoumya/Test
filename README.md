@@ -105,8 +105,8 @@ For example:
 private AwsS3Manager customAmazonS3Client;
 ```
 ```java
-boolean isInserted = customAmazonS3Client.writeObjectToS3Bucket(<TABLE_NAME>, <ConcurrentHashMap data>);
-String result = customAmazonS3Client.readObjectFromS3Bucket(<TABLE_NAME>, <primary key name>, <primary key value>, <column name>);
+boolean isInserted = customAmazonS3Client.writeObjectToS3Bucket(<BUCKET_NAME>, <OBJECT_KEY>, <OBJECT_DATA>, <IS_ENCODE_COMPRESSED>);
+String result = customAmazonS3Client.readObjectFromS3Bucket(<BUCKET_NAME>, <OBJECT_KEY>, <IS_DECODE_DECOMPRESSED>);
 ```
 
 ## Building and Packaging
@@ -124,11 +124,11 @@ Powered by Infosys Team
 
 Important useful links
 
-- Repository: https://infygithub.ad.infosys.com/soumya-2136099/AWS-DynamoDB-Java-Blueprint/
-- API documentation : https://infygithub.ad.infosys.com/soumya-2136099/AWS-DynamoDB-Java-Blueprint/document
-- Issue tracker: https://infygithub.ad.infosys.com/soumya-2136099/AWS-DynamoDB-Java-Blueprint/issues
+- Repository: https://infygithub.ad.infosys.com/soumya-2136099/AWS-S3-Java-Blueprint/
+- API documentation : https://infygithub.ad.infosys.com/soumya-2136099/AWS-S3-Java-Blueprint/document
+- Issue tracker: https://infygithub.ad.infosys.com/soumya-2136099/AWS-S3-Java-Blueprint/issues
 - Related projects:
-  - AWS-S3-Java-Blueprint: https://infygithub.ad.infosys.com/soumya-2136099/AWS-S3-Java-Blueprint/
+  - AWS-S3-Java-Blueprint: https://infygithub.ad.infosys.com/soumya-2136099/AWS-DynamoDB-Java-Blueprint/
   - AWS-SNS-Java-Blueprint: https://infygithub.ad.infosys.com/soumya-2136099/AWS-SNS-Java-Blueprint/
 
 
