@@ -1,11 +1,11 @@
 ![Logo of the project](https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg)
 
-# AWS-DynamoDB-Java-Blueprint
+# AWS-S3-Java-Blueprint
 > Less code more power without knowing AWS cloud.
 
 This is a reusable AWS Java tech component can be used as maven dependency for other projects.
-It integrated with aws sdk and provide commonly and frequently used functions with additional scope,
-without writing much code to communicate with Amazon DynamoDB services.
+It integrated with aws S3 sdk and provide commonly and frequently used functions with additional scope,
+without writing much code to communicate with Amazon Simple Storage Service.
 
 ## Getting started
 
@@ -13,39 +13,39 @@ Two way to configure maven dependency
 
 ```shell
 Clone repository to IDE workspace
-git clone https://infygithub.ad.infosys.com/soumya-2136099/AWS-DynamoDB-Java-Blueprint.git
-cd AWS-DynamoDB-Java-Blueprint/
+git clone https://infygithub.ad.infosys.com/soumya-2136099/AWS-S3-Java-Blueprint.git
+cd AWS-S3-Java-Blueprint/
 mvn clean install
-or open the AWS-DynamoDB-Java-Blueprint folder in any maven supported java IDE as a maven project
+or open the AWS-S3-Java-Blueprint folder in any maven supported java IDE as a maven project
 ```
 
 ```shell
-Download AWS-DynamoDB-Java-Blueprint.jar copy/paste inside .m2 repository folder 
+Download AWS-S3-Java-Blueprint.jar copy/paste inside .m2 repository folder 
 C:\Users\soumya.2136099\.m2\repository
 
 or
 
-mvn install:install-file -Dfile=c:\Users\soumya.2136099\Downloads\AWS-DynamoDB-Java-Blueprint.jar 
--DgroupId=com.infosys.aws.dynamodb.blueprint -DartifactId=com-infosys-aws-dynamodb-blueprint 
+mvn install:install-file -Dfile=c:\Users\soumya.2136099\Downloads\AWS-S3-Java-Blueprint.jar 
+-DgroupId=com.infosys.aws.s3.blueprint -DartifactId=com-infosys-aws-s3-blueprint 
 -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar
 ```
 
 The maven dependency successfully configured in the system and ready to use as a maven dependency.
 
 ### Add dependency configuration to project .pom file
-```XML
+```xml
 <!— Infy AWS DynamoDB custom component maven dependency -->
 <dependency>
-  <groupId>com.infosys.aws.dynamodb.blueprint</groupId>
-  <artifactId>com-infosys-aws-dynamodb-blueprint</artifactId>
+  <groupId>com.infosys.aws.s3.blueprint</groupId>
+  <artifactId>com-infosys-aws-s3-blueprint</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
 
 ## Developing
 
-To implement AWS-DynamoDB-Java-Blueprint API, must understand functional scope or features 
-and how to implement these methods to project followed by:
+To implement AWS-S3-Java-Blueprint API, must understand functional scope or features 
+and how to implement these methods to your project followed by:
 
 * Environment Variables Setting
 * Implementation
@@ -54,30 +54,41 @@ and how to implement these methods to project followed by:
 
 ## Environment Variables Setting
 
-As part of aws cloud service operation Access keys authentication/authorization required to configure in cloud config or any key store or secrate manager or resources/application.properties
-* ACCESS_KEY_ID
-* SECRET_ACCESS_KEY
+As part of aws cloud service operation Access keys authentication/authorization required to configure in cloud config or any key store or secrate manager or resources/application.properties for your main project.
+* AWS_ACCESS_KEY_ID
+* AWS_SECRET_ACCESS_KEY
 * AWS_REGION
 
-Access keys are long-term credentials for an IAM user, for best practice ues IAM profile or role.
+Note : Access keys are long-term credentials for an IAM user, for best practice ues IAM profile or role.
+No configuration required for this blueprint component because its parameterized.
 
 ## Implementation
 
-Package and class with static method create @return client builder instance with applied permission for AWS DynamoDb operations.
+Package and class with static method create @return client builder instance with applied permission for AWS S3 operations.
 
 **Package** : com.infosys.aws.dynamodb.blueprint
 
-**Class** : AwsDynamoDbManager.getInstanceOfDynamoDbBlueprint(...)
+**Class** : AwsS3Manager.getInstanceOfS3Blueprint(...)
 
 For example:
-```Java
+```java
+@Value("${AWS_REGION}")
+private String region;
+	
+@Value("${AWS_ACCESS_KEY_ID}")
+private String accessKey;
+	
+@Value("${AWS_SECRET_ACCESS_KEY}")
+private String secretKey;
+```
+```java
 @Bean
-public AwsDynamoDbManager customAmazonDynamoClient() {
+public AwsS3Manager customAmazonS3Client() {
 	if(accessKey != null && !accessKey.trim().isEmpty() && secretKey != null && !secretKey.trim().isEmpty()) {
-		return AwsDynamoDbManager.getInstanceOfDynamoDbBlueprint(region,accessKey,secretKey); //For Access Keys
+		return AwsS3Manager.getInstanceOfS3Blueprint(region,accessKey,secretKey); //For Access Keys
 	}
 	else {
-		return AwsDynamoDbManager.getInstanceOfDynamoDbBlueprint(); //For IAM profile role
+		return AwsS3Manager.getInstanceOfS3Blueprint(); //For IAM profile role
 	}
 }
 ```
@@ -85,16 +96,17 @@ public AwsDynamoDbManager customAmazonDynamoClient() {
 ## Functional scope and methods
 
 Calling methods as per requirement
-* writeDynamoDBItem(...)
-* readDynamoDBItem(...)
+* writeObjectToS3Bucket(...)
+* readObjectFromS3Bucket(...)
 
 For example:
-```Java
+```java
 @Autowired
-private AwsDynamoDbManager customAmazonDynamoClient;
-
-boolean isInserted = customAwsDynamoDBClient.writeDynamoDBItem(<TABLE_NAME>, <ConcurrentHashMap data>);
-String result = customAwsDynamoDBClient.readDynamoDBItem(<TABLE_NAME>, <primary key name>, <primary key value>, <column name>);
+private AwsS3Manager customAmazonS3Client;
+```
+```java
+boolean isInserted = customAmazonS3Client.writeObjectToS3Bucket(<TABLE_NAME>, <ConcurrentHashMap data>);
+String result = customAmazonS3Client.readObjectFromS3Bucket(<TABLE_NAME>, <primary key name>, <primary key value>, <column name>);
 ```
 
 ## Building and Packaging
