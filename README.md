@@ -9,7 +9,7 @@ without writing much code to communicate with Amazon Simple Storage Service.
 
 ## Getting started
 
-Two way to configure maven dependency 
+Way to configure custom maven dependency 
 
 ```shell
 Clone repository to IDE workspace
