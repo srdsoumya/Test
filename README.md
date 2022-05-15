@@ -53,7 +53,7 @@ and how to implement these methods to your project followed by:
 
 ## Environment Variables Setting
 
-As part of aws cloud service operation Access keys authentication/authorization required to configure in cloud config or any key store or secrate manager or resources/application.properties for your main project.
+As part of aws cloud service operations, AWS access keys required for authentication/authorization and configure in cloud config or any key store or secrate manager or resources/application.properties for your project.
 * AWS_ACCESS_KEY_ID
 * AWS_SECRET_ACCESS_KEY
 * AWS_REGION
@@ -63,7 +63,7 @@ No configuration required for this blueprint component because its parameterized
 
 ## Implementation
 
-Package and class with static method create @return client builder instance with applied permission for AWS S3 operations.
+Package and class with static method create @return client builder instance with applied permission for AWS SNS operations.
 
 **Package** : com.infosys.aws.sns.blueprint
 
