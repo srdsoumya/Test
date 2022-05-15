@@ -53,7 +53,7 @@ and how to implement these methods to your project followed by:
 
 ## Environment Variables Setting
 
-As part of aws cloud service operations, AWS access keys required for authentication/authorization and configure in cloud config or any key store or secrate manager or resources/application.properties for your project.
+As part of AWS cloud service operations, access keys required for authentication/authorization and configure in cloud config or any key store or secrate manager or resources/application.properties for your project.
 * AWS_ACCESS_KEY_ID
 * AWS_SECRET_ACCESS_KEY
 * AWS_REGION
