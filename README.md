@@ -31,7 +31,7 @@ mvn install:install-file -Dfile=c:\Users\soumya.2136099\Downloads\AWS-SNS-Java-B
 
 The custom blueprint maven dependency successfully configured in the system and ready to use as a maven dependency.
 
-### Add dependency configuration to project .pom file
+### Import cutom maven dependency to your project .pom file
 ```xml
 <!— Infy AWS DynamoDB custom component maven dependency -->
 <dependency>
