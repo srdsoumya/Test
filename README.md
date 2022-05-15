@@ -59,7 +59,7 @@ As part of AWS cloud service operations, access keys required for authentication
 * AWS_REGION
 
 Note : Access keys are long-term credentials for an IAM user, for best practice ues IAM profile or role.
-No configuration required for this blueprint component because its parameterized.
+However no configuration required for this custom maven dependency blueprint because its parameterized.
 
 ## Implementation
 
