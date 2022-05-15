@@ -9,10 +9,9 @@ without writing much code to communicate with Amazon Simple Notification Service
 
 ## Getting started
 
-Way to configure custom maven dependency 
+Way to configure custom maven dependency to IDE workspace.
 
 ```shell
-Clone repository to IDE workspace
 git clone https://infygithub.ad.infosys.com/soumya-2136099/AWS-SNS-Java-Blueprint.git
 cd AWS-SNS-Java-Blueprint/
 mvn clean install
