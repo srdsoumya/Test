@@ -116,11 +116,11 @@ mvn clean install
 ```
 
 ## Contributing
-
-Powered by Infosys Team
+- [Priya Shetty](https:///priya-shetty)
+- [Kinshuk Das](https://kinshuk-das)
 
 ## Authors
-- [Kevin Wairi](https://github.com/kevinwairi)
+- [Prasad Palla](https://prasad-pall)
 
 ## Links
 
