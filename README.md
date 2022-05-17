@@ -119,6 +119,9 @@ mvn clean install
 
 Powered by Infosys Team
 
+## Authors
+- [Kevin Wairi](https://github.com/kevinwairi)
+
 ## Links
 
 Important useful links
