@@ -1,4 +1,4 @@
-![Logo of the project](https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg)
+![Logo of the project](https://upload.wikimedia.org/wikipedia/commons/9/95/github_logo.svg)
 
 # AWS-SNS-Java-Blueprint
 > Less code more power without knowing AWS cloud.
@@ -12,7 +12,7 @@ without writing much code to communicate with Amazon Simple Notification Service
 Way to configure custom maven dependency to IDE workspace.
 
 ```shell
-git clone https://infygithub.ad.infosys.com/soumya-2136099/AWS-SNS-Java-Blueprint.git
+git clone https://github.com/soumya-2136099/AWS-SNS-Java-Blueprint.git
 cd AWS-SNS-Java-Blueprint/
 mvn clean install
 or open the AWS-SNS-Java-Blueprint folder in any maven supported java IDE as a maven project
@@ -25,7 +25,7 @@ C:\Users\soumya.2136099\.m2\repository
 or
 
 mvn install:install-file -Dfile=c:\Users\soumya.2136099\Downloads\AWS-SNS-Java-Blueprint.jar 
--DgroupId=com.infosys.aws.sns.blueprint -DartifactId=com-infosys-aws-sns-blueprint 
+-DgroupId=com.github.aws.sns.blueprint -DartifactId=com-github-aws-sns-blueprint 
 -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar
 ```
 
@@ -35,8 +35,8 @@ The custom blueprint maven dependency successfully configured in the system and 
 ```xml
 <!— Infy AWS DynamoDB custom component maven dependency -->
 <dependency>
-  <groupId>com.infosys.aws.sns.blueprint</groupId>
-  <artifactId>com-infosys-aws-sns-blueprint</artifactId>
+  <groupId>com.github.aws.sns.blueprint</groupId>
+  <artifactId>com-github-aws-sns-blueprint</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
@@ -65,7 +65,7 @@ However no configuration required for this custom maven dependency blueprint bec
 
 Package and class with static method create @return client builder instance with applied permission for AWS SNS operations.
 
-**Package** : com.infosys.aws.sns.blueprint
+**Package** : com.github.aws.sns.blueprint
 
 **Class** : AwsSnsManager.getInstanceOfAmazonSNSBlueprint(...)
 
@@ -126,15 +126,15 @@ mvn clean install
 
 Important useful links
 
-- Repository: https://infygithub.ad.infosys.com/soumya-2136099/AWS-SNS-Java-Blueprint/
-- API documentation : https://infygithub.ad.infosys.com/soumya-2136099/AWS-SNS-Java-Blueprint/document
-- Issue tracker: https://infygithub.ad.infosys.com/soumya-2136099/AWS-SNS-Java-Blueprint/issues
+- Repository: https://github.ad.github.com/soumya-2136099/AWS-SNS-Java-Blueprint/
+- API documentation : https://github.ad.github.com/soumya-2136099/AWS-SNS-Java-Blueprint/document
+- Issue tracker: https://github.ad.github.com/soumya-2136099/AWS-SNS-Java-Blueprint/issues
 - Related components:
-  - AWS-S3-Java-Blueprint: https://infygithub.ad.infosys.com/soumya-2136099/AWS-S3-Java-Blueprint/
-  - AWS-DynamoDB-Java-Blueprint: https://infygithub.ad.infosys.com/soumya-2136099/AWS-DynamoDB-Java-Blueprint/
+  - AWS-S3-Java-Blueprint: https://github.ad.github.com/soumya-2136099/AWS-S3-Java-Blueprint/
+  - AWS-DynamoDB-Java-Blueprint: https://github.ad.github.com/soumya-2136099/AWS-DynamoDB-Java-Blueprint/
 
 
 ## Licensing
-Powered by Infosys Team
+Powered by github Team
 
-"The code in this project is licensed under Infosys."
+"The code in this project is licensed under github."
